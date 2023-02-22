@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speck Academy 2023</title>
+</head>
+<body>
+    <p>My Technologies</p>
+
+    <input type="text" placeholder="Enter new technology..." required id="technology">
+    <button type="submit" onclick="myFunction()">Add</button>
+    <button type="submit" onclick="remove()">Remove all items</button>
+    <div id="technologies">
+    </div>
+
+    <script>
+    function myFunction() {
+        let x = document.getElementById("technology").value;
+        const para = document.createElement("p");
+        const node = document.createTextNode(x);
+        para.appendChild(node);
+        document.getElementById("technologies").appendChild(para);
+        
+        // .innerHTML = x;
+    }
+
+    function remove() {
+        var elem = document.querySelector('#technologies');
+        //elem.parentNode.removeChild(elem);
+        elem.innerHTML = "";
+    }
+    </script>
+</body>
+</html>
