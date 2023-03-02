@@ -1,0 +1,45 @@
+* {
+    font-family: sans-serif;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 30vh;
+    align-items: center;
+    justify-items: center;
+}
+
+#linkRemove {
+    color: indianred;
+    margin-top: 80px;
+}
+
+#technology {
+    border-radius: 5px;
+    border: 1px solid indianred;
+    padding: 10px 50px 10px 10px;
+    margin: 10px 20px 0px 0px;
+}
+
+#addButton {
+    color: indianred;
+    background-color: mistyrose;
+    font-weight: 800;
+
+    border-radius: 5px;
+    border: 1px solid indianred;
+    padding: 10px 30px 10px 30px;
+}
+
+#item {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 1px 2px #888888;
+    border-radius: 20px;
+    height: 40px;
+    width: 70%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
